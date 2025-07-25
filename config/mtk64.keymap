@@ -11,12 +11,14 @@
 
 &mt {
     flavor = "balanced";
-    quick-tap-ms = <0>;
+    quick-tap-ms = <250>;
 };
 
 &mkp_input_listener {
     input-processors = <&zip_temp_layer 6 5000>;
 };
+
+&lt { quick-tap-ms = <250>; };
 
 / {
     behaviors {
