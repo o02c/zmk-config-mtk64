@@ -87,7 +87,7 @@
 
         default_layer {
             bindings = <
-&kp ESC  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp JP_MINUS  &kp TAB  &kp ESCAPE  &kp L  &kp U  &kp F  &kp C_PLAY  &kp C_PLAY  &kp W  &kp R  &kp Y  &kp P  &kp JP_AT  &kp Q  &kp E  &mt LCTRL I  &mt LEFT_ALT A  &mt LEFT_SHIFT O  &kp MINUS  &kp K  &mt RIGHT_SHIFT T  &mt RIGHT_ALT N  &mt RCTRL S  &lt 2 H  &kp P  &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp COMMA  &lt 1 LS(LG(S))  &kp LS(LC(LG(NUMBER_4)))  &kp G  &kp D  &kp M  &kp J  &kp B  &kp JP_BSLH  &mt LEFT_GUI ENTER  &lt 2 ESCAPE  &lt 3 BACKSPACE  &lt 5 ESCAPE  &lt 5 ESCAPE  &lt 4 SPACE  &kp JP_CARET  &kp JP_YEN  &tog 6  &kp ENTER  &lt 1 LANGUAGE_1  &lt 1 LANGUAGE_2  &kp ENTER  &tog 6  &mt LEFT_COMMAND ENTER  &mt RIGHT_GUI TAB  &mo 1  &mo 6  &mo 6  &mo 1  &mo 6  &mo 6  &mo 1  &mo 6  &mo 6
+&kp ESC  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp JP_MINUS  &kp TAB  &kp ESCAPE  &kp L  &kp U  &kp F  &kp C_PLAY  &kp C_PLAY  &kp W  &kp R  &kp Y  &kp P  &kp JP_AT  &lt 5 Q  &kp E  &mt LCTRL I  &mt LEFT_ALT A  &mt LEFT_SHIFT O  &kp MINUS  &kp K  &mt RIGHT_SHIFT T  &mt RIGHT_ALT N  &mt RCTRL S  &lt 2 H  &kp P  &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp COMMA  &lt 1 LS(LG(S))  &kp LS(LC(LG(NUMBER_4)))  &kp G  &kp D  &kp M  &kp J  &kp B  &kp JP_BSLH  &mt LEFT_GUI ENTER  &lt 2 ESCAPE  &lt 3 BACKSPACE  &lt 5 ESCAPE  &lt 5 ESCAPE  &lt 4 SPACE  &kp JP_CARET  &kp JP_YEN  &tog 6  &kp ENTER  &lt 1 LANGUAGE_1  &lt 1 LANGUAGE_2  &kp ENTER  &tog 6  &mt LEFT_COMMAND ENTER  &mt RIGHT_GUI TAB  &mo 1  &mo 6  &mo 6  &mo 1  &mo 6  &mo 6  &mo 1  &mo 6  &mo 6
             >;
 
             sensor-bindings =
@@ -97,7 +97,7 @@
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LS(LG(LEFT_BRACKET))  &mkp MB3  &kp LS(LG(RIGHT_BRACKET))  &trans  &trans  &trans  &trans  &kp RCTRL  &kp LEFT_ALT  &kp LEFT_SHIFT  &trans  &kp K_COPY  &mkp MB1  &lt 6 HOME  &mkp MB2  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp K_PASTE  &kp LG(W)  &kp LS(LG(T))  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LS(LG(LEFT_BRACKET))  &mkp MB3  &kp LS(LG(RIGHT_BRACKET))  &trans  &trans  &trans  &trans  &kp RCTRL  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LANGUAGE_2  &kp LANGUAGE_1  &mkp MB1  &lt 6 HOME  &mkp MB2  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp K_PASTE  &kp LG(W)  &kp LS(LG(T))  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <
@@ -108,7 +108,7 @@
 
         layer_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LS(LG(LEFT_BRACKET))  &mkp MB3  &kp LS(LG(RIGHT_BRACKET))  &trans  &trans  &trans  &trans  &kp RCTRL  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LANGUAGE_2  &kp LANGUAGE_1  &mkp MB1  &lt 3 HOME  &mkp MB2  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp K_PASTE  &kp LG(W)  &kp LS(LG(T))  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LS(LG(LEFT_BRACKET))  &mkp MB3  &kp LS(LG(RIGHT_BRACKET))  &trans  &trans  &trans  &trans  &kp RCTRL  &kp LEFT_ALT  &kp LEFT_SHIFT  &lt 1 LANGUAGE_2  &kp LANGUAGE_1  &mkp MB1  &lt 3 HOME  &mkp MB2  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp K_PASTE  &kp LG(W)  &kp LS(LG(T))  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <
