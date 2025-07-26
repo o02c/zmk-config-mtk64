@@ -92,7 +92,7 @@
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LS(LG(LEFT_BRACKET))  &mkp MB3  &kp LS(LG(RIGHT_BRACKET))  &trans  &trans  &trans  &trans  &kp RCTRL  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LANGUAGE_2  &kp LANGUAGE_1  &mkp MB1  &lt 6 HOME  &mkp MB2  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp K_PASTE  &kp LG(W)  &kp LS(LG(T))  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LS(LG(LEFT_BRACKET))  &mkp MB3  &kp LS(LG(RIGHT_BRACKET))  &trans  &trans  &trans  &trans  &kp RCTRL  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LANGUAGE_2  &kp LANGUAGE_1  &mkp MB1  &lt 6 HOME  &mkp MB2  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LG(W)  &kp LS(LG(T))  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <
@@ -103,7 +103,7 @@
 
         layer_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LS(LG(LEFT_BRACKET))  &mkp MB3  &kp LS(LG(RIGHT_BRACKET))  &trans  &trans  &trans  &trans  &kp RCTRL  &kp LEFT_ALT  &kp LEFT_SHIFT  &lt 1 LANGUAGE_2  &kp LANGUAGE_1  &mkp MB1  &lt 3 HOME  &mkp MB2  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp K_PASTE  &kp LG(W)  &kp LS(LG(T))  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LS(LG(LEFT_BRACKET))  &mkp MB3  &kp LS(LG(RIGHT_BRACKET))  &trans  &trans  &trans  &trans  &kp RCTRL  &kp LEFT_ALT  &kp LEFT_SHIFT  &lt 1 LANGUAGE_2  &kp LANGUAGE_1  &mkp MB1  &lt 3 HOME  &mkp MB2  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LG(W)  &kp LS(LG(T))  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <
