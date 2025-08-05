@@ -70,7 +70,7 @@
         pwd_cap: pwd_2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(O) &kp O &kp H &kp T &kp S &kp U &kp K &kp A &kp N0 &kp EXCL &kp EXCL>;
+            bindings = <&kp LS(O) &kp O &kp H &kp T &kp S &kp U &kp K &kp A &kp N0 &kp EXCL &kp EXCL &kp EXCL>;
             label = "PWD_2";
         };
 
@@ -87,7 +87,7 @@
 
         default_layer {
             bindings = <
-&kp ESC  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp JP_MINUS  &kp TAB  &kp ESCAPE  &kp L  &kp U  &kp F  &kp C_PLAY  &kp C_PLAY  &kp W  &kp R  &kp Y  &kp P  &kp JP_AT  &lt 5 Q  &kp E  &mt LCTRL I  &mt LEFT_ALT A  &mt LEFT_SHIFT O  &kp MINUS  &kp K  &mt RIGHT_SHIFT T  &mt RIGHT_ALT N  &mt RCTRL S  &lt 2 H  &kp P  &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp COMMA  &lt 1 LS(LG(S))  &kp LS(LC(LG(NUMBER_4)))  &kp G  &kp D  &kp M  &kp J  &kp B  &kp JP_BSLH  &mt LEFT_GUI ENTER  &lt 2 ESCAPE  &lt 3 BACKSPACE  &lt 5 ESCAPE  &lt 5 ESCAPE  &lt 4 SPACE  &kp JP_CARET  &kp JP_YEN  &tog 6  &kp ENTER  &lt 1 LANGUAGE_1  &lt 1 LANGUAGE_2  &kp ENTER  &tog 6  &mt LEFT_COMMAND ENTER  &mt RIGHT_GUI TAB  &mo 1  &mo 6  &mo 6  &mo 1  &mo 6  &mo 6  &mo 1  &mo 6  &mo 6
+&kp ESC  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &tog 2  &kp TAB  &kp ESCAPE  &kp L  &kp U  &kp F  &kp C_PLAY  &kp C_PLAY  &kp W  &kp R  &kp Y  &kp P  &kp JP_AT  &lt 5 Q  &kp E  &mt LCTRL I  &mt LEFT_ALT A  &mt LEFT_SHIFT O  &kp MINUS  &kp K  &mt RIGHT_SHIFT T  &mt RIGHT_ALT N  &mt RCTRL S  &lt 2 H  &lt 1 P  &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp COMMA  &lt 1 LS(LG(S))  &kp LS(LC(LG(NUMBER_4)))  &kp G  &kp D  &kp M  &kp J  &kp B  &kp JP_BSLH  &lt 2 ESCAPE  &lt 1 ESCAPE  &lt 3 BACKSPACE  &mt LEFT_GUI ESCAPE  &mt RIGHT_GUI TAB  &lt 4 SPACE  &kp JP_CARET  &kp JP_YEN  &tog 0  &kp ENTER  &lt 1 LANGUAGE_1  &lt 1 LANGUAGE_2  &kp ENTER  &tog 0  &lt 2 ESCAPE  &mt RIGHT_GUI TAB  &mo 1  &mo 0  &mo 0  &mo 1  &mo 0  &mo 0  &mo 1  &mo 0  &mo 0
             >;
 
             sensor-bindings =
@@ -97,7 +97,7 @@
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LS(LG(LEFT_BRACKET))  &mkp MB3  &kp LS(LG(RIGHT_BRACKET))  &trans  &trans  &trans  &trans  &kp RCTRL  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LANGUAGE_2  &kp LANGUAGE_1  &mkp MB1  &lt 6 HOME  &mkp MB2  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp K_PASTE  &kp LG(W)  &kp LS(LG(T))  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kt LG(X)  &trans  &kp LS(LG(LEFT_BRACKET))  &mkp MB3  &kp LS(LG(RIGHT_BRACKET))  &trans  &trans  &trans  &trans  &kp RCTRL  &kp LEFT_ALT  &kp LEFT_SHIFT  &kt LG(C)  &kp PAGE_UP  &mkp MB1  &lt 0 HOME  &mkp MB2  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kt LG(V)  &trans  &trans  &kt PAGE_DOWN  &kp LG(W)  &kp LS(LG(T))  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <
@@ -108,7 +108,7 @@
 
         layer_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LS(LG(LEFT_BRACKET))  &mkp MB3  &kp LS(LG(RIGHT_BRACKET))  &trans  &trans  &trans  &trans  &kp RCTRL  &kp LEFT_ALT  &kp LEFT_SHIFT  &lt 1 LANGUAGE_2  &kp LANGUAGE_1  &mkp MB1  &lt 3 HOME  &mkp MB2  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp K_PASTE  &kp LG(W)  &kp LS(LG(T))  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kt LG(X)  &trans  &kp LS(LG(LEFT_BRACKET))  &mkp MB3  &kp LS(LG(RIGHT_BRACKET))  &trans  &trans  &trans  &trans  &kp RCTRL  &kp LEFT_ALT  &kp LEFT_SHIFT  &kt LG(C)  &kp PAGE_UP  &mkp MB1  &lt 3 HOME  &mkp MB2  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kt LG(V)  &trans  &trans  &kt PAGE_DOWN  &kp LG(W)  &kp LS(LG(T))  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <
@@ -136,18 +136,8 @@
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &pwd_yayoi  &kp F1  &kp F2  &kp F3  &kp F4  &trans  &trans  &trans  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_SHIFT  &trans  &pwd_cap  &kp F5  &kp F6  &kp F7  &kp F8  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &pwd_work  &kp F9  &kp F10  &kp F11  &kp F12  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &bt BT_CLR  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &pwd_yayoi  &kp F1  &kp F2  &kp F3  &kp F4  &trans  &trans  &trans  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_SHIFT  &trans  &pwd_cap  &kp F5  &kp F6  &kp F7  &kp F8  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &pwd_work  &kp F9  &kp F10  &kp F11  &kp F12  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
-        };
-
-        layer_6 {
-            bindings = <
-&kp ESC  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp JP_MINUS  &kp TAB  &kp Q  &kp L  &kp U  &kp F  &kp C_PLAY  &kp C_PLAY  &kp W  &kp R  &kp Y  &kp P  &kp JP_AT  &kp Q  &kp E  &mt LCTRL I  &mt LEFT_ALT A  &mt LEFT_SHIFT O  &kp MINUS  &kp K  &mt RIGHT_SHIFT T  &mt RIGHT_ALT N  &mt RCTRL S  &lt 6 NUMBER_3  &kp P  &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp COMMA  &lt 6 LS(LG(S))  &kp LS(LC(LG(NUMBER_4)))  &kp G  &kp D  &kp M  &kp J  &kp B  &kp JP_BSLH  &kp LALT  &kp LGUI  &lt 6 BACKSPACE  &lt 6 ESCAPE  &lt 6 ESCAPE  &lt 6 SPACE  &kp JP_CARET  &kp JP_YEN  &tog 6  &kp ENTER  &lt 1 LANGUAGE_1  &lt 1 LANGUAGE_2  &kp ENTER  &tog 6  &mt LEFT_COMMAND ENTER  &mt RIGHT_GUI TAB  &mo 1  &mo 6  &mo 6  &mo 1  &mo 6  &mo 6  &mo 1  &mo 6  &mo 6
-            >;
-
-            sensor-bindings =
-                <&inc_dec_kp K_VOLUME_UP K_VOLUME_DOWN>,
-                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
     };
 };
