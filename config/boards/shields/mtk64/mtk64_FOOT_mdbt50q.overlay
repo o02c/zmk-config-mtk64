@@ -103,4 +103,11 @@
         
         in-gpios = <&gpio0 15 0>; // P0.15 for WS2812 data line
     };
+
+    // Define external power control
+    ext-power {
+        compatible = "zmk,ext-power-generic";
+        label = "EXT_POWER";
+        control-gpios = <&gpio0 13 GPIO_ACTIVE_HIGH>; // P0.13 for external power control
+    };
 };
