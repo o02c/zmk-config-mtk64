@@ -27,7 +27,7 @@ include:
    snippet: studio-rpc-usb-uart
    cmake-args: -DCONFIG_ZMK_STUDIO=y
  - board: raytac_mdbt50q_db_40_nrf52840
-   shield: mtk64_FOOT rgbled_adapter
+   shield: mtk64_FOOT_mdbt50q rgbled_adapter
    snippet: studio-rpc-usb-uart
    cmake-args: -DCONFIG_ZMK_STUDIO=y
    artifact-name: mdbt50q_dongle

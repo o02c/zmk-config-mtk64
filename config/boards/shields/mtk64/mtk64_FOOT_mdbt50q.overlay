@@ -1,0 +1,40 @@
+#include "mtk64_trackball.dtsi"
+
+&default_transform {
+    row-offset = <14>;
+};
+
+&trackball_listener {
+    status = "okay";  
+};
+
+/ {
+    kscan0: kscan {
+        compatible = "zmk,kscan-gpio-charlieplex";
+        wakeup-source;
+
+        // MDBT50Q GPIO mappings (using P0 pins)
+        interrupt-gpios = <&gpio0 30 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>; // P0.30
+        gpios = <&gpio0 2 GPIO_ACTIVE_HIGH>   // P0.02
+              , <&gpio0 3 GPIO_ACTIVE_HIGH>   // P0.03
+              , <&gpio0 4 GPIO_ACTIVE_HIGH>   // P0.04
+              , <&gpio0 28 GPIO_ACTIVE_HIGH>  // P0.28
+              , <&gpio0 29 GPIO_ACTIVE_HIGH>  // P0.29
+              , <&gpio0 31 GPIO_ACTIVE_HIGH>  // P0.31
+              , <&gpio1 11 GPIO_ACTIVE_HIGH>; // P1.11
+    };
+
+    left_encoder: encoder_left {
+        compatible = "alps,ec11";
+        a-gpios = <&gpio0 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;  // P0.05
+        b-gpios = <&gpio0 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;  // P0.07
+        steps = <15>;
+        status = "disabled";
+    };
+
+    sensors: sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&left_encoder>;
+        triggers-per-rotation = <15>;
+    };
+};
