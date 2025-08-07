@@ -23,8 +23,40 @@
           , <&gpio1 11 GPIO_ACTIVE_HIGH>; // P1.11
 };
 
-// Override encoder configuration
+// Override encoder configuration and enable it
 &left_encoder {
+    status = "okay";
     a-gpios = <&gpio0 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;  // P0.05
     b-gpios = <&gpio0 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;  // P0.07
+};
+
+// Override SPI configuration for MDBT50Q pins
+&pinctrl {
+    spi0_default: spi0_default {
+        group1 {
+            psels = <NRF_PSEL(SPIM_SCK, 0, 17)>,   // P0.17 for SCK
+                <NRF_PSEL(SPIM_MOSI, 0, 20)>,      // P0.20 for MOSI
+                <NRF_PSEL(SPIM_MISO, 0, 22)>;      // P0.22 for MISO
+        };
+    };
+
+    spi0_sleep: spi0_sleep {
+        group1 {
+            psels = <NRF_PSEL(SPIM_SCK, 0, 17)>,
+                <NRF_PSEL(SPIM_MOSI, 0, 20)>,
+                <NRF_PSEL(SPIM_MISO, 0, 22)>;
+            low-power-enable;
+        };
+    };
+};
+
+// Enable SPI and trackball
+&spi0 {
+    status = "okay";
+    cs-gpios = <&gpio0 24 GPIO_ACTIVE_LOW>; // P0.24 for CS
+};
+
+&trackball {
+    status = "okay";
+    irq-gpios = <&gpio0 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; // P0.11 for interrupt
 };
