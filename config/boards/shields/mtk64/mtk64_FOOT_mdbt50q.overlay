@@ -7,9 +7,9 @@
     row-offset = <14>;
 };
 
-&trackball_listener {
-    status = "okay";  
-};
+// &trackball_listener {
+//     status = "okay";  
+// };
 
 // Override the kscan configuration from mtk64.dtsi with MDBT50Q GPIO pins
 &kscan0 {
@@ -51,16 +51,16 @@
     };
 };
 
-// Enable SPI and trackball
-&spi0 {
-    status = "okay";
-    cs-gpios = <&gpio0 9 GPIO_ACTIVE_LOW>; // P0.09 for CS (matching mtk64_trackball.dtsi)
-};
+// Disable SPI and trackball for now (causing linking issues)
+// &spi0 {
+//     status = "okay";
+//     cs-gpios = <&gpio0 9 GPIO_ACTIVE_LOW>; // P0.09 for CS (matching mtk64_trackball.dtsi)
+// };
 
-&trackball {
-    status = "okay";
-    irq-gpios = <&gpio0 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; // P0.10 for interrupt (matching mtk64_trackball.dtsi)
-};
+// &trackball {
+//     status = "okay";
+//     irq-gpios = <&gpio0 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; // P0.10 for interrupt (matching mtk64_trackball.dtsi)
+// };
 
 / {
     // Add LED aliases for RGB widget compatibility
@@ -71,9 +71,9 @@
     };
 
     // Define chosen nodes for ZMK
-    chosen {
-        zmk,underglow = &led_strip;
-    };
+    // chosen {
+    //     zmk,underglow = &led_strip;
+    // };
 
     // Define individual LED nodes for RGB widget
     leds {
@@ -92,24 +92,24 @@
         };
     };
 
-    // Define WS2812 LED strip for RGB underglow
-    led_strip: ws2812 {
-        compatible = "worldsemi,ws2812-gpio";
-        status = "okay";
-        
-        chain-length = <10>; // Number of LEDs in your strip
-        color-mapping = <LED_COLOR_ID_GREEN
-                         LED_COLOR_ID_RED
-                         LED_COLOR_ID_BLUE>;
-        
-        in-gpios = <&gpio0 15 0>; // P0.15 for WS2812 data line
-    };
+    // Disable WS2812 LED strip for RGB underglow (causing linking issues)
+    // led_strip: ws2812 {
+    //     compatible = "worldsemi,ws2812-gpio";
+    //     status = "okay";
+    //     
+    //     chain-length = <10>; // Number of LEDs in your strip
+    //     color-mapping = <LED_COLOR_ID_GREEN
+    //                      LED_COLOR_ID_RED
+    //                      LED_COLOR_ID_BLUE>;
+    //     
+    //     in-gpios = <&gpio0 15 0>; // P0.15 for WS2812 data line
+    // };
 
-    // Define external power control
-    ext_power_generic: ext-power {
-        compatible = "zmk,ext-power-generic";
-        status = "okay";
-        label = "EXT_POWER";
-        control-gpios = <&gpio0 13 GPIO_ACTIVE_HIGH>; // P0.13 for external power control
-    };
+    // Disable external power control for now
+    // ext_power_generic: ext-power {
+    //     compatible = "zmk,ext-power-generic";
+    //     status = "okay";
+    //     label = "EXT_POWER";
+    //     control-gpios = <&gpio0 13 GPIO_ACTIVE_HIGH>; // P0.13 for external power control
+    // };
 };
