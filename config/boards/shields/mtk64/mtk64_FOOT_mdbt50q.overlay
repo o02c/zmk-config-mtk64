@@ -54,12 +54,12 @@
 // Enable SPI and trackball
 &spi0 {
     status = "okay";
-    cs-gpios = <&gpio0 24 GPIO_ACTIVE_LOW>; // P0.24 for CS
+    cs-gpios = <&gpio0 9 GPIO_ACTIVE_LOW>; // P0.09 for CS (matching mtk64_trackball.dtsi)
 };
 
 &trackball {
     status = "okay";
-    irq-gpios = <&gpio0 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; // P0.11 for interrupt
+    irq-gpios = <&gpio0 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; // P0.10 for interrupt (matching mtk64_trackball.dtsi)
 };
 
 / {
@@ -95,6 +95,7 @@
     // Define WS2812 LED strip for RGB underglow
     led_strip: ws2812 {
         compatible = "worldsemi,ws2812-gpio";
+        status = "okay";
         
         chain-length = <10>; // Number of LEDs in your strip
         color-mapping = <LED_COLOR_ID_GREEN
@@ -105,8 +106,9 @@
     };
 
     // Define external power control
-    ext-power {
+    ext_power: ext-power {
         compatible = "zmk,ext-power-generic";
+        status = "okay";
         label = "EXT_POWER";
         control-gpios = <&gpio0 13 GPIO_ACTIVE_HIGH>; // P0.13 for external power control
     };
