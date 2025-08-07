@@ -60,3 +60,29 @@
     status = "okay";
     irq-gpios = <&gpio0 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; // P0.11 for interrupt
 };
+
+/ {
+    // Add LED aliases for RGB widget compatibility
+    aliases {
+        led-red = &led_red;
+        led-green = &led_green; 
+        led-blue = &led_blue;
+    };
+
+    // Define individual LED nodes for RGB widget
+    leds {
+        compatible = "gpio-leds";
+        led_red: led_0 {
+            gpios = <&gpio0 6 GPIO_ACTIVE_HIGH>; // P0.06 for red LED
+            label = "Red LED";
+        };
+        led_green: led_1 {
+            gpios = <&gpio0 8 GPIO_ACTIVE_HIGH>; // P0.08 for green LED
+            label = "Green LED";
+        };
+        led_blue: led_2 {
+            gpios = <&gpio0 12 GPIO_ACTIVE_HIGH>; // P0.12 for blue LED
+            label = "Blue LED";
+        };
+    };
+};
