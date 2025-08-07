@@ -106,7 +106,7 @@
     };
 
     // Define external power control
-    ext_power: ext-power {
+    ext_power_generic: ext-power {
         compatible = "zmk,ext-power-generic";
         status = "okay";
         label = "EXT_POWER";
